@@ -19,19 +19,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gdelpu/hapi-corpsso.git"
+    "url": "https://github.com/sudhansurana/hapi-corpsso.git"
   },
   "keywords": [
     "saml",
     "sso",
     "hapi"
   ],
-  "author": "Grégory DELPU <gregory.delpu@soprasteria.com>",
+  "author": "Sudhansu Sekhar Rana <sudhansurana@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gdelpu/hapi-corpsso/issues"
+    "url": "https://github.com/sudhansurana/hapi-corpsso/issues"
   },
-  "homepage": "https://github.com/gdelpu/hapi-corpsso#readme",
+  "homepage": "https://github.com/sudhansurana/hapi-corpsso#readme",
   "dependencies": {
     "@hapi/boom": "^7.4.2",
     "debug": "^2.2.0",
