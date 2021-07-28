@@ -45,6 +45,7 @@ const register = <RegisterFun>(
             });
         },
         getCookieName: () => {
+          console.log('SSOPLUGIN->cookieName', cookieName)
           return cookieName;
         }
       };

@@ -45,6 +45,10 @@ exports.assert = (
       });
 
       if (onAssertRes) {
+        // delete unecessery profile data
+        delete profile['nameQualifier'];
+        delete profile['spNameQualifier'];
+        delete profile['http://schemas.microsoft.com/ws/2008/06/identity/claims/groups'];
         // the callback shall return the reply object after using it to redirect/response.
         const replyFromCallback = onAssertRes(profile, request, h);
         h.state(cookieName, {[samlCredsPropKey]: profile});
@@ -58,5 +62,6 @@ exports.assert = (
       }
       throw Boom.unauthorized(err.message, 'saml');
     }
+    console.log('hapi-corpsso->lib->SamlController->end')
   }
 };
